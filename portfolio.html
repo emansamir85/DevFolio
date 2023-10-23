@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Porfolio Details</title>
+
+  <!--css files-->
+  <link rel="stylesheet" href="./css/normalize.css" />
+  <link rel="stylesheet" href="./css/all.min.css" />
+  <link rel="stylesheet" href="./css/bootstrap.css" />
+  <link rel="stylesheet" href="./css/devfolio.css" />
+</head>
+
+<body>
+   <!-- Loading -->
+   <section id="loading">
+    <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+  </section>
+  <!--Nav Bar-->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark text-white">
+    <div class="container">
+      <a class="navbar-brand" href="#home">
+        <h2 class="logo mb-0">DevFolio</h2>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active me-3" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link me-3" href="#about">about</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link me-3" href="#services">services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link me-3" href="#portfolio">work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#blog">blog</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle me-3" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Drop down
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item text-black" href="#">Action</a></li>
+              <li>
+                <a class="dropdown-item text-black" href="#">Another action</a>
+              </li>
+              <li>
+                <a class="dropdown-item text-black" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link me-3" href="#contact">contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--Header-->
+  <header class="blog-header position-relative d-flex text-center align-items-center home" id="home">
+    <div class="overlay-blog"></div>
+    <div class="container position-relative">
+      <div class="blog-content">
+        <h2>porfolio details</h2>
+        <p>
+          <a href="" class="text-decoration-none text-white">home / </a>
+          <a href="#" disabled class="dis text-decoration-none">portfolio details</a>
+        </p>
+      </div>
+    </div>
+  </header>
+  <!-- portfolio details-->
+  <section class="mt-5 portfolio-details">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+           
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./images/portfolio-details-1.jpg" class="d-block w-100" alt="portfolio-details1">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/portfolio-details-2.jpg" class="d-block w-100" alt="portfolio-details2">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/portfolio-details-3.jpg" class="d-block w-100" alt="portfolio-details3">
+              </div>
+            </div>
+            <div class="carousel-indicators position-static mt-3">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="row gy-5">
+            <div class="col-12">
+              <div class="bg-white p-4 project-info">
+                <h3 class=" fw-bold fs-3 pb-4 mb-0">Project information
+                </h3>
+                <ul class="ps-0 mt-4">
+                  <li class="text-muted mb-3"><span class=" fw-bold">category:</span> wep design</li>
+                  <li class="text-muted mb-3"><span class="fw-bold">client:</span> ASU company</li>
+                  <li class="text-muted mb-3"><span class="fw-bold">project date:</span> 01 March, 2020
+                  </li>
+                  <li class="text-muted"><span class="fw-bold">project URL:</span> www.example.com
+                  </li>
+                </ul>
+              </div>
+              <div class="mt-4">
+                <h2 class=" fs-4 fw-bold mb-">This is an example of portfolio detail</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates commodi labore quisquam voluptate
+                  velit a, ipsam ad itaque amet excepturi voluptatibus, deserunt blanditiis eaque reiciendis, ut earum
+                  quibusdam atque magni?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!--footer-->
+  <footer>
+    <div class="container">
+      <div class="text-center">
+        <p class="text-white mb-2"><i class="fa-solid fa-copyright text-white me-1"></i>Copyright <span
+            class=" fw-bold">DevFolio</span>. All Rights Reserved</p>
+        <p class="text-white mb-0">Designed by <a href="" class="text-white text-decoration-none">BootstrapMade
+          </a></p>
+
+      </div>
+    </div>
+  </footer>
+  <!--go top-->
+  <div class="go-top">
+    <a href="#home">
+      <i class="fa-solid fa-arrow-up text-white"></i>
+    </a </div>
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="./js/main.js"></script>
+
+    <script></script>
+</body>
+
+</html>

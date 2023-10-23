@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog details</title>
+
+    <!--css files-->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/devfolio.css" />
+  </head>
+  <body>
+     <!-- Loading -->
+     <section id="loading">
+      <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+    </section>
+    <!--Nav Bar-->
+    <nav
+      class="navbar fixed-top navbar-expand-lg navbar-dark  text-white"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#home"><h2 class="logo mb-0">DevFolio</h2></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active me-3" aria-current="page" href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-3" href="#about">about</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-3" href="#services">services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-3" href="#portfolio">work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#blog">blog</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle me-3"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Drop down
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item text-black" href="#">Action</a></li>
+                <li>
+                  <a class="dropdown-item text-black" href="#"
+                    >Another action</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item text-black" href="#"
+                    >Something else here</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link me-3" href="#contact">contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Header-->
+    <header
+      class="blog-header position-relative d-flex text-center align-items-center home" id="home"
+    >
+      <div class="overlay-blog"></div>
+      <div class="container position-relative">
+        <div class="blog-content">
+          <h2>blog details</h2>
+          <p>
+            <a href="" class="text-decoration-none text-white">home / </a
+            ><a href="" class="text-decoration-none text-white">library / </a
+            ><a href="#" disabled class="dis text-decoration-none">data</a>
+          </p>
+        </div>
+      </div>
+    </header>
+    <!-- blog details-->
+    <section class="py-3" id="blog-page">
+      <div class="container">
+        <div class="row my-5">
+          <div class="col-xl-8">
+            <div class="bg-white p-5 article">
+              <img src="./images/post-1.jpg" class="w-100" alt="post1" />
+              <h3 class="mt-3 mb-0">
+                Lorem ipsum dolor sit amet consec tetur adipisicing
+              </h3>
+              <div class="my-3">
+                <span class="fs-4 text-primary bg-primary">|</span
+                ><span class="ms-3"
+                  ><i class="fa-solid fa-user"></i
+                  ><a href="">jason london </a></span
+                ><span class="ms-3"
+                  ><i class="fa-solid fa-tag"></i>
+                  <a href="">web design</a></span
+                ><span class="ms-3"
+                  ><i class="fa-regular fa-message"></i><a href="">14</a></span
+                >
+              </div>
+              <p class="text-muted">
+                Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                Cras ultricies ligula sed magna dictum porta. Quisque velit
+                nisi, pretium ut lacinia in, elementum id enim. Praesent sapien
+                massa, convallis a pellentesque nec, egestas non nisi.
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+                posuere cubilia Curae; Donec velit neque, auctor sit amet
+                aliquam vel, ullamcorper sit amet ligula. Nulla quis lorem ut
+                libero malesuada feugiat.
+              </p>
+              <p class="text-muted">
+                Nulla porttitor accumsan tincidunt. Cras ultricies ligula sed
+                magna dictum porta. Mauris blandit aliquet elit, eget tincidunt
+                nibh pulvinar a. Cras ultricies ligula sed magna dictum porta.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                sollicitudin molestie malesuada.
+              </p>
+              <p class="text-muted">
+                Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Praesent sapien massa, convallis a pellentesque nec, egestas non
+                nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+                Donec rutrum congue leo eget malesuada.
+              </p>
+              <p class="text-muted">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                quis lorem ut libero malesuada feugiat. Curabitur arcu erat,
+                accumsan id imperdiet et, porttitor at sem. Vivamus suscipit
+                tortor eget felis porttitor volutpat. Vivamus suscipit tortor
+                eget felis porttitor volutpat. Quisque velit nisi, pretium ut
+                lacinia in, elementum id enim.
+              </p>
+              <p class="qoute text-dark fst-italic">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                posuere erat a ante.
+              </p>
+
+              <p class="text-muted">
+                Nulla porttitor accumsan tincidunt. Cras ultricies ligula sed
+                magna dictum porta. Mauris blandit aliquet elit, eget tincidunt
+                nibh pulvinar a. Cras ultricies ligula sed magna dictum porta.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                sollicitudin molestie malesuada.
+              </p>
+            </div>
+            <div class="bg-white p-5 comments my-5">
+                <h4>comments (34)</h4>
+                <div class="comment d-flex mt-5">
+                    <div class="user-img">
+                        <img src="./images/testimonial-2.jpg" alt="user1">
+                    </div>
+                    <div class="text ms-4">
+                        <h5 class=" fs-4">Oliver Colmenares</h5>
+                        <span class="text-muted fst-italic">18 sep 2017</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores reprehenderit, provident cumque ipsam temporibus maiores quae natus libero optio, at qui beatae ducimus placeat debitis voluptates amet corporis.</p>
+                        <a href="">reply</a>
+                    </div>
+                </div>
+                <div class="comment d-flex mt-5">
+                    <div class="user-img">
+                        <img src="./images/testimonial-4.jpg" alt="user2">
+                    </div>
+                    <div class="text ms-4">
+                        <h5 class=" fs-4">Carmen Vegas
+                        </h5>
+                        <span class="text-muted fst-italic">18 sep 2017</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores reprehenderit, provident cumque ipsam temporibus maiores quae natus libero optio, at qui beatae ducimus placeat debitis voluptates amet corporis.</p>
+                        <a href="">reply</a>
+                    </div>
+                </div>
+                <div class="comment d-flex mt-5 ms-5">
+                    <div class="user-img">
+                        <img src="./images/testimonial-2.jpg" alt="user1">
+                    </div>
+                    <div class="text ms-4">
+                        <h5 class=" fs-4">Oliver Colmenares</h5>
+                        <span class="text-muted fst-italic">18 sep 2017</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores reprehenderit, provident cumque ipsam temporibus maiores quae natus libero optio, at qui beatae ducimus placeat debitis voluptates amet corporis.</p>
+                        <a href="">reply</a>
+                    </div>
+                </div>
+                <div class="comment d-flex mt-5">
+                    <div class="user-img">
+                        <img src="./images/testimonial-2.jpg" alt="user1">
+                    </div>
+                    <div class="text ms-4">
+                        <h5 class=" fs-4">Oliver Colmenares</h5>
+                        <span class="text-muted fst-italic">18 sep 2017</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores reprehenderit, provident cumque ipsam temporibus maiores quae natus libero optio, at qui beatae ducimus placeat debitis voluptates amet corporis.</p>
+                        <a href="">reply</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="bg-white p-5 reply ">
+                <h4>leave a reply</h4>
+                <div class="reply-form mt-5">
+                <div class="row">
+                    <div class="col">
+                      <input type="text" class="form-control py-2" placeholder="name*" aria-label="name">
+                    </div>
+                    <div class="col">
+                      <input type="email" class="form-control py-2" placeholder="email*" aria-label="email">
+                    </div>
+                  </div>
+                  <div class="my-3">
+                    <input type="text" class="form-control py-2" id="website" placeholder="web site">
+                  </div>
+                  <div class="mb-3">
+                    <textarea class="form-control" id="comment" rows="7" placeholder="comment*"></textarea>
+                  </div>
+                  <button type="button" class="btn btn-primary rounded-pill reply-msg">Send Message</button>
+                  </div>
+
+            </div>
+          </div>
+          <div class=" col-xl-4">
+            <div class="row gy-5">
+              <div class="col-12">
+                <div class="bg-white p-5 sec">
+                  <h3>search</h3>
+                  <div class="input-group">
+                    <div class="form-outline search-input">
+                      <input
+                        type="search"
+                        id="form1"
+                        class="form-control rounded-0 px-3"
+                        placeholder="search"
+                      />
+                    </div>
+                    <button
+                      type="button"
+                      class="btn btn-primary px-4 rounded-0"
+                    >
+                      <i class="fas fa-search"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="bg-white p-5 pb-3 sec">
+                  <h3>recent post</h3>
+                  <ul class="ps-0 sec-list">
+                    <li><a href="">Atque placeat maiores.</a></li>
+                    <li>
+                      <a href="">Lorem ipsum dolor sit amet consectetur</a>
+                    </li>
+                    <li><a href="">Nam quo autem exercitationem.</a></li>
+                    <li><a href="">Atque placeat maiores nam quo autem</a></li>
+                    <li><a href="">Nam quo autem exercitationem.</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="bg-white p-5 pb-3 sec">
+                  <h3>archives</h3>
+                  <ul class="ps-0 sec-list">
+                    <li><a href="">September, 2017.</a></li>
+                    <li>
+                      <a href="">April, 2017.</a>
+                    </li>
+                    <li><a href="">Nam quo autem exercitationem.</a></li>
+                    <li><a href="">Atque placeat maiores nam quo autem </a></li>
+                    <li><a href="">Nam quo autem exercitationem. </a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="bg-white p-5  pe-0 sec">
+                  <h3>tags</h3>
+                  <div class="butn">
+                  <a class="rounded-pill text-white" href="">web</a>
+                  <a class="rounded-pill text-white " href="">design</a>
+                  <a class="rounded-pill text-white" href="">travel</a>
+                  <a class="rounded-pill text-white" href="">photoshop</a>
+                  <a class="rounded-pill text-white" href="">corel draw</a>
+                  <a class="rounded-pill text-white" href="">javascript</a>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--footer-->
+    <footer>
+        <div class="container">
+            <div class="text-center">
+                <p class="text-white mb-2"><i class="fa-solid fa-copyright text-white me-1"></i>Copyright <span class=" fw-bold">DevFolio</span>. All Rights Reserved</p>
+                <p class="text-white mb-0">Designed by <a href="" class="text-white text-decoration-none">BootstrapMade
+                </a></p>
+
+            </div>
+        </div>
+    </footer>
+    <!--go top-->
+    <div class="go-top">
+        <a href="#">
+        <i class="fa-solid fa-arrow-up text-white"></i>
+        </a
+        </div>
+        <script src="./js/code.jquery.com_jquery-3.7.0.min.js"></script>
+        <script>
+          // lading screen
+$(document).ready(function () {
+  $(".lds-spinner").fadeOut(500,function(){
+      $("#loading").slideUp(500, function(){
+          $("html").css("overflow","auto");
+          $("#loading").remove();
+      });
+  })
+});
+
+         let blogPageOffset=$("#blog-page").offset().top,
+          windowScroll= "";
+      
+      $(window).scroll(function () {
+      
+       windowScroll = $(window).scrollTop();
+      
+          if (windowScroll > blogPageOffset){
+          $(".navbar").css("backgroundColor","rgba(0,0,0,.9)");
+          } 
+          else{
+              $(".navbar").css("backgroundColor","transparent");
+          }
+          console.log(windowScroll)
+      });
+        </script>
+  </body>
+</html>

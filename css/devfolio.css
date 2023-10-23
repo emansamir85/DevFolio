@@ -1,0 +1,553 @@
+/* Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-transform: capitalize;
+
+}
+
+:root {
+    --main-transition:.5s;
+    --body-color:#f5f5f5;
+    --primary-color:#0d6efd;
+    --secondary-color:#cde1f8;
+    --overlay-color :#0078ff
+}
+
+
+
+body{
+    background-color: var(--body-color);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+html{
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+/* Loading */
+#loading{
+    background-color: rgba(69, 67, 67,.9);
+   position: fixed;
+   width: 100%;
+   height: 100%;
+    z-index: 99999;
+    text-align: center;
+}
+
+.lds-spinner {
+    color: official;
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin: 300px auto;
+    
+  }
+  .lds-spinner div {
+    transform-origin: 40px 40px;
+    animation: lds-spinner 1.2s linear infinite;
+  }
+  .lds-spinner div:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 37px;
+    width: 6px;
+    height: 18px;
+    border-radius: 20%;
+    background: #fff;
+  }
+  .lds-spinner div:nth-child(1) {
+    transform: rotate(0deg);
+    animation-delay: -1.1s;
+  }
+  .lds-spinner div:nth-child(2) {
+    transform: rotate(30deg);
+    animation-delay: -1s;
+  }
+  .lds-spinner div:nth-child(3) {
+    transform: rotate(60deg);
+    animation-delay: -0.9s;
+  }
+  .lds-spinner div:nth-child(4) {
+    transform: rotate(90deg);
+    animation-delay: -0.8s;
+  }
+  .lds-spinner div:nth-child(5) {
+    transform: rotate(120deg);
+    animation-delay: -0.7s;
+  }
+  .lds-spinner div:nth-child(6) {
+    transform: rotate(150deg);
+    animation-delay: -0.6s;
+  }
+  .lds-spinner div:nth-child(7) {
+    transform: rotate(180deg);
+    animation-delay: -0.5s;
+  }
+  .lds-spinner div:nth-child(8) {
+    transform: rotate(210deg);
+    animation-delay: -0.4s;
+  }
+  .lds-spinner div:nth-child(9) {
+    transform: rotate(240deg);
+    animation-delay: -0.3s;
+  }
+  .lds-spinner div:nth-child(10) {
+    transform: rotate(270deg);
+    animation-delay: -0.2s;
+  }
+  .lds-spinner div:nth-child(11) {
+    transform: rotate(300deg);
+    animation-delay: -0.1s;
+  }
+  .lds-spinner div:nth-child(12) {
+    transform: rotate(330deg);
+    animation-delay: 0s;
+  }
+  @keyframes lds-spinner {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+
+/* go top */
+.go-top{
+    position: fixed;
+    z-index: 9999;
+    right: 15px;
+    bottom: 15px;
+    display: none;
+    
+}
+.go-top i{
+    background-color: var(--primary-color);
+   padding: .8rem 1rem;
+    border-radius: 50%;
+    font-size: 1.2rem;
+
+}
+
+/* main title */
+.main-title {
+    margin: 5rem auto;
+    text-align: center;
+    position: relative;
+}
+.main-title::after{
+    content: "";
+    position: absolute;
+    background-color: var(--primary-color);
+    height: 4%;
+    width: 50px;
+    transform: translateX(-50%);
+}
+.main-title h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+/* blue-background */
+.blue-bg {
+    
+    background: url(../images/overlay-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;}
+
+.blue-bg .overlay , .counter .overlay, .blog-header .overlay-blog{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color:var(--overlay-color);
+        opacity: .7;
+    }
+
+/* Nav Bar */
+.navbar {
+    padding: 12px 0 !important;
+    transition:background-color  2s;
+
+}
+nav ul li a {
+    position: relative;
+    font-weight:600 !important;
+    text-transform: uppercase !important;
+    color: white !important;
+    transition: var(--main-transition);
+
+}
+nav ul li .nav-link::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    bottom: 0;
+    transition: var(--main-transition);
+}
+nav ul li .navlink:hover::before{
+    width: 70%;
+}
+.navbar-nav .nav-link.active::before{
+    width: 70%;
+
+}
+
+
+
+
+nav .logo {
+    font-size: 28px;
+    color: white;
+}
+/* Header */
+.home {
+    background: url(../images/hero-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    
+}
+
+header .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0/ 50%);
+    
+
+}
+
+header h1 {
+    font-size: 4.5rem;
+}
+header .content .typing {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+
+
+@media screen  and (max-width:786px){
+    header h1{
+        font-size: 3rem;
+        
+    }
+    header .content .typing {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+}
+
+/* About */
+.about .about-box {
+    box-shadow: rgba(12, 13, 13, 0.2) 0px 8px 5px;
+}
+.about .info p {
+font-size: 1.1rem;
+line-height: 1.6;
+}
+.about .skills .prog {
+    height: 12px;
+    background-color: var(--secondary-color);
+    position: relative;
+}
+.about .skills .prog span {
+    position: absolute;
+    height: 100%;
+}
+.about .about-me p{
+    font-size: 1.25rem;
+    font-weight: 300;
+    
+    
+}
+.about .about-me h4, .comments h4 , .reply h4{
+    font-size: 2rem;
+    position: relative;
+}
+.about .about-me h4::after, .comments h4::after, .reply h4::after{
+    content: "";
+    position: absolute;
+    height: 4px;
+    background-color: var(--primary-color);
+    width: 100px;
+    bottom: -13px;
+    left: 0;
+}
+@media screen  and (max-width:991px){
+   
+    .about .info p {
+        font-size: 1rem;
+        line-height: 1;
+        }
+    .about .about-me p{
+        font-size: 1rem;}
+}
+@media screen and (max-width:991px) and (min-width:576px)  {
+     .about .about-box .info .about-img {
+        width: 90%;
+        margin-bottom: 1.5rem;
+    }
+}
+/* Services */
+.all-services .service {
+    background-color:white;
+    border-radius: 16px;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    box-shadow: rgba(67, 74, 74, 0.2) 0px 4px 5px;
+
+} 
+.all-services .service i {
+    padding: 2rem;
+    border: 10px solid var(--primary-color);
+    border-radius: 50%;
+    margin-bottom: .7rem;
+
+    transition: var(--main-transition);
+}
+.all-services .service:hover i, .contact .social i:hover  {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--secondary-color);
+}
+.all-services .service h3{
+    text-transform: uppercase;
+    margin-bottom:  1rem;
+    font-weight: 500;
+}
+/* counter*/
+.counter{
+    background: url(../images/counters-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.counter .count i {
+    color: white;
+    width: 80px;
+    height: 80px;
+    padding: .7rem 0;
+    border: 10px solid var(--secondary-color);
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+/* portfolio */
+.portfolio .work {
+    background-color: white;
+    box-shadow: rgba(67, 74, 74, 0.2) 0px 2px 3px;
+
+}
+
+.portfolio .work img:hover{
+    scale: 1.4;
+
+}
+.portfolio .work img {
+    width: 100%;
+    transition:1.5s;
+
+}
+.portfolio .work span {
+    color: var(--overlay-color);
+}
+.portfolio .work .icon i{
+    border: 3px solid var(--overlay-color) ;
+    color:var(--overlay-color) ;
+    border-radius: 50%;
+    padding: .3rem;
+}
+/* testimonials */
+.testimonials button {
+    height: 15px !important;
+    width: 15px !important;
+    border-radius: 50%;
+}
+/* blog */
+.blog .blog-post {
+    box-shadow: rgba(67, 74, 74, 0.2) 2px 2px 4px;
+
+}
+.blog .blog-post .img-footer {
+    width: 40px;
+    height: 40px;
+}
+.blog .blog-post .post-text1::before, .blog .blog-post .post-text::before{
+    position: absolute;
+    color: white;
+    font-weight: 500;
+    background-color:var(--primary-color);
+    padding: .4rem 1rem ;
+    font-size: .8rem;
+    top: 0;
+    left: 50%;
+    text-transform: uppercase;
+    border-radius: 4px;
+    transform: translate(-50%,-50%);
+}
+.blog .blog-post .post-text1::before{
+    content: "travel";
+}
+.blog .blog-post .post-text::before{
+    content: "web design";
+}
+.blog .blog-post .post-text a:hover, .blog .blog-post .post-text1 a:hover{
+    color: var(--primary-color) !important;
+}
+/* contact */
+.contact {
+    padding: 8rem 0 3rem 0;
+    
+}
+.contact .line::after{
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 20%;
+    background-color: var(--primary-color);
+    bottom: -10px;
+    left: 0;
+}
+.contact .social i {
+    font-size: 1.3rem;
+    padding: .7rem;
+    color: black;
+    border: 4px solid var(--primary-color);
+    border-radius: 50%;
+    transition: var(--main-transition);
+    margin-right: .5rem;
+}
+/* footer */
+footer {
+    background-color: #0062d3;
+    padding: 1.5rem;
+    
+
+    
+}
+
+/* blog details*/
+.blog-header {
+    background: url(../images/overlay-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 400px;
+}
+.blog-header .overlay-blog {
+    height: 400px;
+}
+.blog-header .blog-content h2{
+    font-size: 4rem;
+    color: white;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+.blog-header .blog-content a {
+    margin-right: .5rem;
+    font-size: 1.1rem;
+}
+.blog-header .blog-content .dis{
+    pointer-events: none;
+    color: rgb(222, 222, 222);
+}
+/* section blog details */
+section .article h3 {
+    font-size: 2rem;
+    text-transform: none;
+
+}
+section .article p{
+    font-size: 1.1rem;
+}
+section .article a {
+    color:var(--overlay-color) ;
+    margin-left: .3rem;
+    font-size: 1.1rem;
+}
+section .article .qoute{
+    border-left: 5px solid var(--overlay-color);
+    padding: 1.3rem;
+    font-size: 1.2rem;
+}
+/* comments */
+.comments .comment img {
+    width: 5rem;
+    height: 5rem;
+}
+.reply-form .reply-msg{
+    padding: .7rem 2rem;
+    font-size: 1.2rem;
+}
+/* side section */
+.sec h3 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    padding: 0 1rem;
+    margin-bottom: 2rem;
+    border-left: 5px solid var(--overlay-color);
+}
+.sec .search-input {
+    width: 75%;
+}
+.sec li {
+    position: relative;
+    padding: 0 0 1rem 1.2rem;
+}
+.sec li::before {
+    position: absolute;
+    content: "";
+    width: 12px;
+    height: 2px;
+    background-color: var(--overlay-color);
+    top: 13px;
+    left: -2px;
+    
+}
+.sec .sec-list a {
+    color:#1e1e1e ;
+}
+.sec .sec-list a:hover{
+    color: var(--overlay-color);
+}
+.sec .butn a {
+    font-size: 1.1rem;
+    padding: .3rem .7rem;
+    background-color: var(--overlay-color);
+    display: inline-block;
+    margin-bottom: .5rem;
+}
+/* portfolio details */
+.portfolio-details button {
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%;
+    border: 1px solid var(--primary-color) !important;
+    
+}
+.portfolio-details .carousel-indicators .active {
+    background-color: var(--primary-color) !important;
+}
+.project-info h3 {
+    border-bottom: 1px solid #eee;
+}
